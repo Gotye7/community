@@ -13,6 +13,7 @@ import static okhttp3.RequestBody.*;
 
 @Component
 public class GithubProvider {
+    //get and push
     public String getAccessToken(AccessTokenDTO accessTokenDTO){
         MediaType mediaType = MediaType.get("application/json; charset=utf-8");//括号内为定义的返回类型
         OkHttpClient client = new OkHttpClient();
